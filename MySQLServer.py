@@ -1,19 +1,3 @@
-# Write a simple python script that creates the database alx_book_store in your MySQL server.
-
-# Name of python script should be MySQLServer.py
-# If the database alx_book_store already exists, your script should not fail
-# You are not allowed to use the SELECT or SHOW statements
-# NOTE :
-
-# Required to print message such as Database 'alx_book_store' created successfully! when database is successfully created.
-
-# Print error message to handle errors when failing to connect to the DB.
-
-# handle open and close of the DB in your script.
-#!/usr/bin/python3
-"""
-A Python script to create the 'alx_book_store' database in a MySQL server.
-"""
 
 import mysql.connector
 from mysql.connector import errorcode
