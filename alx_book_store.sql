@@ -6,19 +6,19 @@ USE `alx_book_store`;
 
 -- Create the table for Books
 CREATE TABLE IF NOT EXISTS Books (
-    `book_id` INT NOT NULL AUTO_INCREMENT,
-    `title` VARCHAR(130) NOT NULL,
-    `author_id` INT NOT NULL,
-    `price` DECIMAL(10, 2) NOT NULL,
-    `publication_date` DATE,
+    book_id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(130) NOT NULL,
+    author_id INT NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    publication_date DATE,
     PRIMARY KEY (`book_id`),
     FOREIGN KEY (`author_id`) REFERENCES `Authors`(`author_id`)
 );
 
 -- Create the table for Authors
 CREATE TABLE IF NOT EXISTS Authors (
-    `author_id` INT NOT NULL AUTO_INCREMENT,
-    `author_name` VARCHAR(215) NOT NULL,
+    author_id INT NOT NULL AUTO_INCREMENT,
+    author_name VARCHAR(215) NOT NULL,
     PRIMARY KEY (`author_id`)
 );
 
